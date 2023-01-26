@@ -93,11 +93,11 @@ for y, r, rt in zip(years, rates, returns):
         for goo, gow in prez.items():
             ax.add_artist(gow)
 
-        ax.set_xlabel("Real GDP Yearly Percent Change", color='blue')
+        ax.set_xlabel("Nominal GDP Yearly Percent Change", color='blue')
         ax.set_ylabel("S&P 500 Yearly Return", color='blue')
         ax.set_xticklabels(['{0:.2f}%'.format(jo*100) for jo in ax.get_xticks()])
         ax.set_yticklabels(['{0:.2f}%'.format(jo*100) for jo in ax.get_yticks()])
-        plt.pause(0.1)
+        plt.pause(0.001)
 
 
 
