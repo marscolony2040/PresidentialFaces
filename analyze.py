@@ -103,7 +103,7 @@ for y, r, rt in zip(years, rates, returns):
         ax.set_ylabel("S&P 500 Yearly Return", color=fg)
         ax.set_xticklabels(['{0:.2f}%'.format(jo*100) for jo in ax.get_xticks()])
         ax.set_yticklabels(['{0:.2f}%'.format(jo*100) for jo in ax.get_yticks()])
-        plt.pause(0.7)
+        plt.pause(0.01)
 
 
 
